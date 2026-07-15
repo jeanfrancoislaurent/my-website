@@ -1,0 +1,77 @@
+.article{
+
+    width:65%;
+
+    margin:80px auto;
+
+}
+
+
+.article h1{
+
+    font-family:Georgia,"Times New Roman",serif;
+
+    font-size:70px;
+
+    font-weight:400;
+
+}
+
+
+.subtitle{
+
+    font-size:28px;
+
+    margin-top:20px;
+
+    color:#555;
+
+}
+
+
+.text{
+
+    margin-top:45px;
+
+    font-size:20px;
+
+    line-height:1.7;
+
+}
+
+
+
+@media(max-width:600px){
+
+
+    .article{
+
+        width:90%;
+
+        margin:50px auto;
+
+    }
+
+
+    .article h1{
+
+        font-size:45px;
+
+    }
+
+
+    .subtitle{
+
+        font-size:22px;
+
+    }
+
+
+    .text{
+
+        font-size:18px;
+
+    }
+
+
+}
