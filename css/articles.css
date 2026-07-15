@@ -1,6 +1,6 @@
 .article{
 
-    width:65%;
+    width:min(90%, 900px);
 
     margin:80px auto;
 
@@ -11,7 +11,7 @@
 
     font-family:Georgia,"Times New Roman",serif;
 
-    font-size:70px;
+    font-size:clamp(40px, 6vw, 70px);
 
     font-weight:400;
 
@@ -20,7 +20,7 @@
 
 .subtitle{
 
-    font-size:28px;
+    font-size:clamp(20px, 3vw, 28px);
 
     margin-top:20px;
 
@@ -33,7 +33,7 @@
 
     margin-top:45px;
 
-    font-size:20px;
+    font-size:clamp(17px, 2vw, 20px);
 
     line-height:1.7;
 
@@ -55,14 +55,14 @@
 
     .article h1{
 
-        font-size:45px;
+        font-size:clamp(35px, 10vw, 45px);
 
     }
 
 
     .subtitle{
 
-        font-size:22px;
+        font-size:21px;
 
     }
 
@@ -71,7 +71,8 @@
 
         font-size:18px;
 
-    }
+        line-height:1.6;
 
+    }
 
 }
