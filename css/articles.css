@@ -40,6 +40,25 @@
 }
 
 
+.section-title{
+
+    margin-top:55px;
+
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+
+    font-size:clamp(24px,3vw,32px);
+
+    font-weight:500;
+
+}
+
+
+.section-title + .text{
+
+    margin-top:10px;
+
+}
+
 
 @media(max-width:600px){
 
@@ -74,5 +93,36 @@
         line-height:1.6;
 
     }
+
+
+    .section-title{
+
+        font-size:26px;
+
+    }
+
+}
+
+
+.back-button{
+
+    display:inline-block;
+
+    margin-bottom:35px;
+
+    color:#0071e3;
+
+    text-decoration:none;
+
+    font-size:17px;
+
+    transition:opacity .2s ease;
+
+}
+
+
+.back-button:hover{
+
+    opacity:.55;
 
 }
