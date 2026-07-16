@@ -61,6 +61,10 @@ nav{
 
     box-shadow:0 1px 20px rgba(0,0,0,0.08);
 
+    opacity:0;
+
+    animation:fadeIn 0.8s ease forwards;
+
 }
 
 
@@ -86,6 +90,52 @@ nav a{
 nav a:hover{
 
     opacity:.55;
+
+}
+
+
+
+/* ---------- FADE ANIMATION ---------- */
+
+
+.fade-in{
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+    transition:
+
+        opacity 1s ease,
+
+        transform 1s ease;
+
+}
+
+
+.fade-in.visible{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
 
 }
 

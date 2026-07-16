@@ -11,18 +11,78 @@ fetch(navbarPath)
 
     document.querySelector("nav").innerHTML = data;
 
+
     let links = document.querySelectorAll("nav a");
+
 
     links.forEach(link => {
 
         let page = link.getAttribute("data-page");
 
-        if (inArticles) {
+
+        if(inArticles){
+
             link.href = "../" + page;
-        } else {
+
+        }else{
+
             link.href = page;
+
         }
 
     });
+
+
+});
+
+
+
+/* ---------- SCROLL FADE ---------- */
+
+
+document.addEventListener("DOMContentLoaded",()=>{
+
+
+    let elements = document.querySelectorAll(".hero");
+
+
+    elements.forEach(element=>{
+
+        element.classList.add("fade-in");
+
+    });
+
+
+
+    let observer = new IntersectionObserver((entries)=>{
+
+
+        entries.forEach(entry=>{
+
+
+            if(entry.isIntersecting){
+
+                entry.target.classList.add("visible");
+
+            }
+
+
+        });
+
+
+    },{
+
+        threshold:0.25
+
+    });
+
+
+
+    elements.forEach(element=>{
+
+        observer.observe(element);
+
+    });
+
 
 });
